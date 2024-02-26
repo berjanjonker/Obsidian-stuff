@@ -6,7 +6,8 @@ Both resources walk you through the basics of how Obsidian works and what you ca
 ## Plugins
 My goal is to keep things as simple as possible. This is the list of plugins I currently have installed:
 - [Templater](https://github.com/SilentVoid13/Templater) - A template plugin for obsidian 
-- [DataView](https://github.com/blacksmithgu/obsidian-dataview) - Provides a query language for filtering, sorting, and extracting data from Markdown pages. 
+- [DataView](https://github.com/blacksmithgu/obsidian-dataview) - Provides a query language for filtering, sorting, and extracting data from Markdown pages.
+- [Sortable](https://github.com/alexandru-dinu/obsidian-sortable) - Makes (Dataview)Tables sortable.
 - [Quickadd](https://github.com/chhoumann/quickadd) - QuickAdd is a powerful combination of four tools (called choices): templates, captures, macros, and multis.
 - [Various Complements](https://github.com/tadashi-aikawa/obsidian-various-complements-plugin) - This plugin enables you complete words like the auto-completion of IDE.
 
@@ -23,7 +24,7 @@ I ended up with a system for personal projects and a few special MOC(Maps of Con
 - For some things I use tags to retrieve things at a later point in time. I want to get rid of it and slowly converting stuff to MOC notes
 
 ### Movies/Documentaries 
-I like to store the movies and documentaries I have watched. For each movie I have a seperate note in a "Movie" folder. In my daily notes I can link to these notes and write down some interesting thoughts about the movie. The content of the movie notes are filled automatically. Below a step-by-step instruction of my set-up.
+I like to store the movies and documentaries I have watched. For each movie I have a seperate note in a "Movie" folder. In my daily notes I can link to these notes and write down some interesting thoughts about the movie. The content of the movie notes are filled automatically. Below a step-by-step instruction of my set-up. Here you can find my datatable script for a nice overview of all your movies -> [MOC/Movies.md](MOC/Movies.md)
 
 - You will need an [OMDb API](http://www.omdbapi.com/) key. You can request one for free [here](http://www.omdbapi.com/apikey.aspx). OMDb is an open movie database which we will use to automatically fetch movie metadata.
 - Add the [scripts/movies.js](scripts/movies.js) script to your Obsidian vault, e.g. inside of a /Scripts folder to keep things organized
