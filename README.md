@@ -12,12 +12,12 @@ My goal is to keep things as simple as possible. This is the list of plugins I c
 
 ## My setup
 I use the tools that I learned from [GRIP](https://gripbook.com/). For me daily notes works very well. During the day I dump all thoughts and stuff I want to remember in a single daily note. Once a week I go through the notes, add some context (so I can find it back at a later time) and archive it.
-- [Daily notes](https://help.obsidian.md/Plugins/Daily+notes) - Template.md
-- [Weekly review](https://rickpastoor.com/sections/weeklyreview.html) - Template.md
-- [Quarterly/yearly review](https://rickpastoor.substack.com/p/making-your-goals-happen) - Template.md
+- [Daily notes](https://help.obsidian.md/Plugins/Daily+notes) - My template: [templates/daily note template.md](templates/daily%20note%20template.md)
+- [Weekly review](https://rickpastoor.com/sections/weeklyreview.html) - My template: [templates/weekly review template.md](templates/weekly%20review%20template.md)
+- [Quarterly/yearly review](https://rickpastoor.substack.com/p/making-your-goals-happen) - My template: [templates/quarterly review template.md](templates/quarterly%20review%20template.md)
 
 ## Second brain
-After reading the book of Tiago Forte about [Building a second brain](https://fortelabs.com/blog/basboverview/) it was clear to me that it is way to complex for my use case. I use my notes mainly for personal stuff. Work related projects have their own systems and methods. It is difficult to combine it in one note system. For work I use Obsidian to prepare meetings, make notes during meetings and use it for my personal development at work.
+After reading the book of Tiago Forte about [Building a second brain](https://fortelabs.com/blog/basboverview/) it was clear to me that it is way too complex for my use case. I use my notes mainly for personal stuff. Work related projects have their own systems and methods. It is difficult to combine it in one note system. For work I use Obsidian to prepare meetings, make notes during meetings and use it for my personal development at work.
 I ended up with a system for personal projects and a few special MOC(Maps of Content) notes for a few things.
 - A new project (e.g. booking a trip) is a note in the root folder of my vault. I can easily add stuff and visit the note during the day. When it is finished I archive the projects(note) during my weekly review.
 - For some things I use tags to retrieve things at a later point in time. I want to get rid of it and slowly converting stuff to MOC notes
