@@ -21,8 +21,36 @@ After reading the book of Tiago Forte about [Building a second brain](https://fo
 I ended up with a system for personal projects and a few special MOC(Maps of Content) notes for a few things.
 - A new project (e.g. booking a trip) is a note in the root folder of my vault. I can easily add stuff and visit the note during the day. When it is finished I archive the projects(note) during my weekly review.
 - For some things I use tags to retrieve things at a later point in time. I want to get rid of it and slowly converting stuff to MOC notes
-- TODO: Movies/Documentaries 
-- TODO: Books
+
+### Movies/Documentaries 
+I like to store the movies and documentaries I have watched. For each movie I have a seperate note in a "Movie" folder. In my daily notes I can link to these notes and write down some interesting thoughts about the movie. The content of the movie notes are filled automatically. Below a step-by-step instruction of my set-up.
+
+- You will need an [OMDb API](http://www.omdbapi.com/) key. You can request one for free [here](http://www.omdbapi.com/apikey.aspx). OMDb is an open movie database which we will use to automatically fetch movie metadata.
+- Add the [scripts/movies.js](scripts/movies.js) script to your Obsidian vault, e.g. inside of a /Scripts folder to keep things organized
+- Create a new template for a Movie note - My template: [templates/new movie template.md](templates/new%20movie%20template.md)
+- Create a macro in QuickAdd. Macros in QuickAdd allow you to automatically run a series of actions in succession. Here we will create a command palette action that runs the macro. The macro will initiate the script you added in Step 1 to automatically fetch movie metadata from OMDb, then create a new note using your template from Step 2.
+  - Go to _Obsidian Settings > QuickAdd_
+  - Click _Manage Macros_
+  - Give your macro a name, e.g. "Lookup Movie"
+  - Click _Configure_ on the macro
+  - Under _User Scripts_, select "movie" and click _Add_
+  - Click the cog icon next to the movie script and enter your OMDb API key
+  - Click _Template_
+    - Click on the cog next to Untitled Template Choice and choose the Movie template you created
+    - Enable File Name Format and use {{VALUE:fileName}} as the file name. The fileName value takes the Title of the movie/show and removes any illegal characters
+    - Enter the folder to create movie notes in
+  - Close all the popup modals and go back to the _Settings > QuickAdd_ screen
+  - In the dropdown next to the _Add Choice_ button choose _Macro_
+    - Give your command a name like "Add Movie" then click _Add Choice_
+    - Click the cog next to your Add Movie macro and choose the "Lookup Movie" macro you just created
+    - Toggle the lightning bolt icon which will make this macro available from your main command palette
+- Launch the command palette with CMD + P (or your preferred hotkey); Type "Add Movie" (i.e. the name of your macro command)
+  - Enter a movie title; You should see search results from OMDb appear
+  - Select the movie of your choice from the results
+  - Enter the rating 0-10 and fill where you watched the movie e.g. Netflix, Cinetree
+  - You should automatically see a new note open with your template pre-filled
+
+### TODO: Books
 
 
 ## Always Looking to Improve
