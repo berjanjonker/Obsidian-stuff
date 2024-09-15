@@ -10,6 +10,7 @@ My goal is to keep things as simple as possible. This is the list of plugins I c
 - [Sortable](https://github.com/alexandru-dinu/obsidian-sortable) - Makes (Dataview)Tables sortable.
 - [Quickadd](https://github.com/chhoumann/quickadd) - QuickAdd is a powerful combination of four tools (called choices): templates, captures, macros, and multis.
 - [Various Complements](https://github.com/tadashi-aikawa/obsidian-various-complements-plugin) - This plugin enables you complete words like the auto-completion of IDE.
+- [Book Search](https://github.com/anpigon/obsidian-book-search-plugin) - Easily create book notes.
 
 ## My setup
 I use the tools that I learned from [GRIP](https://gripbook.com/). For me daily notes works very well. During the day I dump all thoughts and stuff I want to remember in a single daily note. Once a week I go through the notes, add some context (so I can find it back at a later time) and archive it.
@@ -22,6 +23,9 @@ After reading the book of Tiago Forte about [Building a second brain](https://fo
 I ended up with a system for personal projects and a few special MOC(Maps of Content) notes for a few things.
 - A new project (e.g. booking a trip) is a note in the root folder of my vault. I can easily add stuff and visit the note during the day. When it is finished I archive the projects(note) during my weekly review.
 - For some things I use tags to retrieve things at a later point in time. I want to get rid of it and slowly converting stuff to MOC notes
+
+### Books
+Most books I read is from an e-reader. I take note on the the e-reader device. Once I finished a book, I create a new note in the folder "Books". To create a book note I use the book search plugin I listed above (You can follow the readme on their github page to install and connect it with the google books API). In the generated note I add all notes from my e-reader. In daily notes I place a mention and the main take away for a book  
 
 ### Movies/Documentaries 
 I like to store the movies and documentaries I have watched. For each movie I have a seperate note in a "Movie" folder. In my daily notes I can link to these notes and write down some interesting thoughts about the movie. The content of the movie notes are filled automatically. Below a step-by-step instruction of my set-up. Here you can find my datatable script for a nice overview of all your movies -> [MOC/Movies.md](MOC/Movies.md)
@@ -50,9 +54,6 @@ I like to store the movies and documentaries I have watched. For each movie I ha
   - Select the movie of your choice from the results
   - Enter the rating 0-10 and fill where you watched the movie e.g. Netflix, Cinetree
   - You should automatically see a new note open with your template pre-filled
-
-### TODO: Books
-
 
 ## Always Looking to Improve
 Do you have suggestions on how to improve these templates? Want to contribute to the project?
